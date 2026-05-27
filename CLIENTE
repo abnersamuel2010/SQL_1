@@ -1,0 +1,14 @@
+CREATE TABLE IF NOT EXISTS cliente(
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  telefone INTEGER NOT NULL,
+  endereco TEXT NOT NULL,
+  nome TEXT NOT NULL,
+  cpf INTEGER NOT NULL unique
+ );
+ 
+ INSERT into cliente( cpf, telefone, endereco, nome)
+ VALUES
+ ('022.665.498-66', '45 1321 4564', 'Rua dos Sigmas 273', 'Sigma'),
+ ('002.565.458-61', '45 1321 4564', 'Rua Tralala 273', 'Tinhauda');
+ 
+ SELECT * from cliente;
